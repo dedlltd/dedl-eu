@@ -1,11 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DEDL LTD</title><meta name="description" content="DEDL LTD (HE 434880) is a Cyprus company running AFFCT Influence Marketing Agency and DEDL Events."><link rel="stylesheet" href="style.css"></head><body>
+<title>DEDL LTD</title><meta name="description" content="DEDL LTD (HE 434880) is a Cyprus company that builds and runs its own brands: AFFCT and DEDL Events."><link rel="stylesheet" href="style.css"></head><body>
 <header class="screen">
   <canvas id="net" aria-hidden="true"></canvas>
   <div class="wrap hero">
     <p class="eyebrow">DEDL LTD · Republic of Cyprus · Since 2022</p>
-    <h1>We grow brands with <em>creators, data and live experiences.</em></h1>
-    <p class="lead">DEDL LTD is a marketing company built for the digital market. We connect brands with creators on YouTube, TikTok, Instagram and Kick, track every result, and produce events people remember. We work through two brands.</p>
+    <h1>One company. <em>Two brands.</em> More to come.</h1>
+    <p class="lead">DEDL LTD builds and runs its own brands. Today we operate two: AFFCT, an influencer marketing agency, and DEDL Events, an event production brand. We stay open to new ideas, partners and technology projects, and we keep building new businesses.</p>
     <a class="down" href="#brands">Our brands ↓</a>
   </div>
 </header>
@@ -50,17 +50,29 @@
     </div>
   </section>
 
+  <section id="careers" aria-labelledby="h-careers">
+    <h2 id="h-careers">Careers</h2>
+    <div class="jobs">
+      <article class="job">
+        <p class="kind">AFFCT · Full time</p>
+        <h3>Sales Manager</h3>
+        <p>Find and bring in new brand clients for AFFCT. You build a pipeline, run first calls and close deals together with the founders.</p>
+        <ul><li>2+ years in B2B sales, ideally in marketing or media</li><li>Fluent English; Russian is a plus</li><li>Comfortable with iGaming, trading and crypto clients</li></ul>
+        <p class="apply">Send your CV to <a href="mailto:info@dedl.eu?subject=Sales%20Manager">info@dedl.eu</a> with the subject “Sales Manager”.</p>
+      </article>
+      <article class="job">
+        <p class="kind">AFFCT · Full time</p>
+        <h3>Account Manager</h3>
+        <p>Lead client campaigns from brief to report. You keep the client informed, coordinate creators and the team, and make sure every campaign delivers.</p>
+        <ul><li>2+ years in account or project management</li><li>Experience with influencer or performance marketing</li><li>Fluent English; Russian is a plus</li></ul>
+        <p class="apply">Send your CV to <a href="mailto:info@dedl.eu?subject=Account%20Manager">info@dedl.eu</a> with the subject “Account Manager”.</p>
+      </article>
+    </div>
+  </section>
+
   <section id="contact" aria-labelledby="h-contact">
     <h2 id="h-contact">Contact</h2>
-    <p class="pitch">Planning a campaign or an event? Tell us about your brand and your goal, and we will come back with a first idea.</p>
     <p class="contact"><a href="mailto:info@dedl.eu">info@dedl.eu</a><a href="tel:+35777788744">+357 77 788 744</a></p>
-    <dl class="ledger">
-      <dt>Legal name</dt><dd>DEDL LTD</dd>
-      <dt>Registration no.</dt><dd>HE 434880, Registrar of Companies, Cyprus</dd>
-      <dt>Incorporated</dt><dd>2022</dd>
-      <dt>Director</dt><dd>Dmitrii Filonenko</dd>
-      <dt>Address</dt><dd>Kosta Krystalli 6, Agios Athanasios, 4105 Limassol, Cyprus</dd>
-    </dl>
   </section>
 </main>
 
@@ -84,6 +96,18 @@
     for(var k=0;k<pts.length;k++){ var r=pts[k]; x.fillStyle=r.hot?'#e8d400':'rgba(20,20,16,.35)'; x.beginPath(); x.arc(r.x,r.y,r.hot?3:2,0,6.283); x.fill(); }
     if(!reduce) requestAnimationFrame(draw); }
   size(); draw(); window.addEventListener('resize',function(){ size(); if(reduce) draw(); });
+})();
+</script>
+<div class="notice" id="notice" role="region" aria-label="Privacy notice" hidden>
+  <p>This site does not use tracking cookies and does not collect personal data. <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+  <button type="button" id="notice-ok">OK</button>
+</div>
+<script>
+(function(){
+  var n=document.getElementById('notice'), k='dedl-notice-ok', seen=false;
+  try{ seen=localStorage.getItem(k)==='1'; }catch(e){}
+  if(!seen) n.hidden=false;
+  document.getElementById('notice-ok').addEventListener('click',function(){ n.hidden=true; try{ localStorage.setItem(k,'1'); }catch(e){} });
 })();
 </script>
 </body></html>
